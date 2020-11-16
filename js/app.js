@@ -1,5 +1,5 @@
 //constants
-console.log("hello");
+console.log("test js/app.js");
 const winCombo =[
     [0, 1, 2],
     [3, 4, 5],
@@ -21,11 +21,18 @@ let winner;
 
 //chached elems
 
-const sqrBox = Array.from(document.querySelectorAll('.square'));
+//none of these worked with, or without the array.from
 
-console.log(sqrBox);
+// const sqrBox = Array.from(document.querySelectorAll('.square'));
+// const sqrBox = Array.from(document.querySelectorAll('[data-cell]'));
+
+const sqrBox = Array.from(document.querySelectorAll('#board div'));
+
+console.log(sqrBox, "WHY IS THIS ARRAY EMPTY!!");
 
 //event listners
+
+//this turned up undefined as well, idk whats happening man....
 
 // document.getElementById('board').addEventListener('click', yourTurn());
 
