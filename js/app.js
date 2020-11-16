@@ -36,26 +36,45 @@ console.log(sqrBox, "WHY IS THIS ARRAY EMPTY!!");
 
 // document.getElementById('board').addEventListener('click', yourTurn());
 
+// need another for the reset btn
 
-//functions
+/* functions */
+
+/* win funciton goes here (takes in win condition)
+    if win is not null check who is winner(use winCombo)
+        if turn ends on X, x is winner
+        else if turn ends on O, O is winner
+        else, it's a tie
+    else 
+
+*/
+
+
+function yourTurn(){
+    console.log("it's your turn now!");
+    /*if board is not full
+        check to see if turn === 'x', if it does change it to 'o', else change to 'x'
+    else run win function */
+}
+
+function render() {
+    board.forEach(function(mrk, inx) {
+        sqrBox[inx].textContent = mrk;
+
+    });
+    //ad messages here
+    //if winner is X display mssg 1, else if winner is O display mssg 2, else display tie 
+};
+
 function init() {
     board = [
         '', '', '',
         '', '', '',
         '', '', ''
     ];
-
+    //set winner to null
     render();
 };
 
-function render() {
-    board.forEach(function(mrk, inx) {
-        sqrBox[inx].textContent = mrk;
-    });
-};
-
-function yourTurn(){
-    console.log("it's your turn now!");
-}
 
 init();
