@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(152, 181, 207);
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.board {
+    display: grid;
+    grid-template-rows: repeat(3, 10vmin);
+    grid-template-columns: repeat(3, 10vmin);
+    grid-gap: 0vmin;
+  
+  }
+  
+div {
+    border: 2px solid rgb(0, 43, 80);
+    font-size: 8vmin;
+    text-align: center;
+    vertical-align: middle;
+  } 
+
+#rstBtn {
+    text-align: center;
+    font-size: 20px;
+    border:none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 131, 233);
+    border-radius: 8px;
+    margin: 10px;
+    }
